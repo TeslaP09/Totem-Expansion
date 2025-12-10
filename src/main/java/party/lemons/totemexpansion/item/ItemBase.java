@@ -13,7 +13,7 @@ public class ItemBase extends Item implements IModel
 {
 	public ItemBase(String name)
 	{
-		this.setUnlocalizedName(ModConstants.MODID + "." + name);
+		this.setTranslationKey(ModConstants.MODID + "." + name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTab.tab);
 

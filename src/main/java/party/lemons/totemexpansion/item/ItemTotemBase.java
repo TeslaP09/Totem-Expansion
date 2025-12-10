@@ -87,7 +87,7 @@ public class ItemTotemBase extends ItemBase implements IBauble, IRenderBauble
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn)
 	{
-		tooltip.add(TextFormatting.DARK_PURPLE + I18n.format(this.getUnlocalizedName() + ".desc"));
+		tooltip.add(TextFormatting.DARK_PURPLE + I18n.format(this.getTranslationKey() + ".desc"));
 	}
 
 	public boolean clearPotions()

@@ -59,7 +59,7 @@ public class TotemEventHandler
 				}
 			}
 
-			if(event.player.isSneaking() && event.player.getActivePotionEffect(MobEffects.LEVITATION) != null)
+			if(ModConfig.LEVITATION_SHIFT && event.player.isSneaking() && event.player.getActivePotionEffect(MobEffects.LEVITATION) != null)
 			{
 				event.player.fallDistance = 0;
 				event.player.motionY = -0.10;

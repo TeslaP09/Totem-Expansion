@@ -15,7 +15,7 @@ public class ItemTotemUndying extends ItemTotemBase
 	public ItemTotemUndying()
 	{
 		super("minecraft:totem_of_undying", TotemType.DEATH);
-		setUnlocalizedName("totem");
+		setTranslationKey("totem");
 	}
 
 	public boolean onActivate(EntityPlayer living, ItemStack stack, DamageSource source)

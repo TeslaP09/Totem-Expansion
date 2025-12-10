@@ -116,4 +116,7 @@ public class ModConfig
 
 	@Config.Ignore
 	public static List<Block> ORES = new ArrayList<>();
+
+	@Config.Name("Shift to sink Levitation Potion")
+	public static boolean LEVITATION_SHIFT = false;
 }
