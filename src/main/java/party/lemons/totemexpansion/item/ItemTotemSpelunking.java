@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
+import party.lemons.totemexpansion.config.ModConfig;
 import party.lemons.totemexpansion.potion.ModPotions;
 
 /**
@@ -22,7 +23,7 @@ public class ItemTotemSpelunking extends ItemTotemBase
 		super.onActivate(living, stack, source);
 
 		living.swingArm(EnumHand.MAIN_HAND);
-		living.addPotionEffect(new PotionEffect(ModPotions.SPELUNKING, 900, 0));
+		living.addPotionEffect(new PotionEffect(ModPotions.SPELUNKING, ModConfig.SPELUNKING_DURATION, 0));
 		return true;
 	}
 }

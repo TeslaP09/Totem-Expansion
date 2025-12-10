@@ -4,6 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
+import party.lemons.totemexpansion.config.ModConfig;
 import party.lemons.totemexpansion.handler.ticker.TickerHandler;
 import party.lemons.totemexpansion.handler.ticker.TickerTime;
 
@@ -22,7 +23,7 @@ public class ItemTotemTime extends ItemTotemBase
 		super.onActivate(living, stack, source);
 
 		if(!living.world.isRemote)
-			TickerHandler.addTicker(new TickerTime(10000, living.world));
+			TickerHandler.addTicker(new TickerTime(ModConfig.TIME_SKIP, living.world));
 
 		living.swingArm(EnumHand.MAIN_HAND);
 		return true;

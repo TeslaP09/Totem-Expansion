@@ -5,6 +5,8 @@ import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
+import party.lemons.totemexpansion.config.ModConfig;
+
 /**
  * Created by Sam on 6/04/2018.
  */
@@ -26,7 +28,7 @@ public class ItemTotemFalling extends ItemTotemBase
 			living.setHealth(20F);
 
 		living.fallDistance = 0;
-		living.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, 900, 2));
+		living.addPotionEffect(new PotionEffect(MobEffects.LEVITATION, ModConfig.LEVITATION_DURATION, ModConfig.LEVITATION_AMPLIFIER));
 		return true;
 	}
 

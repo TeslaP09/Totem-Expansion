@@ -119,4 +119,16 @@ public class ModConfig
 
 	@Config.Name("Shift to sink Levitation Potion")
 	public static boolean LEVITATION_SHIFT = false;
+
+	@Config.Name("Totem of Spelunking Duration")
+	public static int SPELUNKING_DURATION = 1800;
+
+	@Config.Name("Totem of Advancing Time Skip")
+	public static int TIME_SKIP = 10000;
+
+	@Config.Name("Totem of Ascension Levitation Duration")
+	public static int LEVITATION_DURATION = 900;
+
+	@Config.Name("Totem of Ascension Levitation Amplifier")
+	public static int LEVITATION_AMPLIFIER = 2;
 }
