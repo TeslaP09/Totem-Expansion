@@ -243,6 +243,16 @@ public class TotemEventHandler
 			}
 		}
 
+		for(ItemStack stack : player.inventory.offHandInventory)
+		{
+			if(!stack.isEmpty() && stack.getItem() instanceof ItemTotemBase)
+			{
+				ItemTotemBase totem = (ItemTotemBase) stack.getItem();
+				if(totem.getType() == type)
+					return stack;
+			}
+		}
+
 		return ItemStack.EMPTY;
 	}
 }
